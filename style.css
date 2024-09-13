@@ -16,6 +16,7 @@ nav {
   margin-bottom: 20px;
   display: flex;
   padding: 10px;
+  border-radius: 25px;
 }
 h1 {
   display: flex;
@@ -40,6 +41,7 @@ a {
 main {
   background: rgb(0, 68, 255);
   display: flex;
+  border-radius: 40px;
 }
 .sidebar {
   margin-right: 25px;
@@ -52,11 +54,16 @@ main {
   flex: 1;
   padding: 15px;
 }
+img {
+  border: 5px solid #640000;
+  border-radius: 25px;
+}
 
 /* portfolio styles */
 #interests {
   border: 4px hex #00ff4c;
   padding: 8px;
+  border-radius: 25px;
 }
 h2,
 h3,
@@ -65,30 +72,79 @@ p {
   color: rgb(255, 0, 0);
 }
 .list {
-  color: rgb(255, 0, 0)
+  color: rgb(255, 0, 0);
 }
-         /* portfolio styles */
-         .content h1 {
-          color: black;
-      }
+/* portfolio styles */
+.content h1 {
+  color: black;
+}
 
-      #portfolio {
-          list-style-type: none;
-          padding-left: 0;
-      }
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
 
-      #portfolio li {
-          background: #fff;
-          padding: 10px;
-          border-radius: 10px;
-          margin-bottom: 10px;
-      }
+#portfolio li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 
-      #portfolio li:hover {
-          background: #eee;
-      }
+#portfolio li:hover {
+  background: #eee;
+}
 
-      #portfolio a {
-          text-decoration: none;
-          color: #454545;
-      }
+#portfolio a {
+  text-decoration: none;
+  color: #454545;
+}
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 100ch;
+    zoom: 1.5;
+    display: grid;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
+
+  a {
+    font-size: 42px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-img {
+    width: 100%;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+  }
+
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
+}
