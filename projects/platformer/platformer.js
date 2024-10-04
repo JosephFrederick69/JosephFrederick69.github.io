@@ -61,6 +61,7 @@ createCollectable("max", 760, 400, 6, 1)
 createCollectable("database", 700, 500, 6, 1)
 createCollectable("steve", 500, 0, 7, 1)
 createCollectable("grace", 900, 240, 100, 1)
+createCollectable("kennedi", 100, 650, 50, 1)
 
     // TODO 3
     // Create cannons
@@ -70,6 +71,7 @@ createCollectable("grace", 900, 240, 100, 1)
 
 createCannon("left", 400, 2000, 200)
 createCannon("right", 200, 2000, 200)
+createCannon("top", 1220, 1000)
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
