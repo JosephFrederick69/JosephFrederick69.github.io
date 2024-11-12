@@ -6,6 +6,11 @@
 	<title>Bouncing Box</title>
 	<script src="jquery.min.js"></script>
 	<style>
+		body {
+			background-image: url("data:image/jpeg;base64,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");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 		.box {
 			width: 70px;
 			height: 70px;
@@ -67,7 +72,8 @@
 
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
-
+			var points = 0;
+			var speed = 10;
 
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -75,9 +81,14 @@
 			turn it around! 
 			*/
 			function update() {
-				postionX = positionX + 10
+				positionX = positionX + speed;
 				moveBoxTo(positionX);
-				
+				if (positionX > boardWidth) {
+					speed = speed * -1
+				}
+				if (positionX < 0) {
+					speed = speed * -1
+				}
 			};
 
 			/* 
@@ -86,8 +97,15 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-
-
+				positionX = 0;
+				points = points + 1;
+				changeBoxText(points);
+				if (speed > 0) {
+					speed = speed + 3;
+				}
+				else if (speed < 0) {
+					speed = speed - 3;
+				}
 			};
 
 
